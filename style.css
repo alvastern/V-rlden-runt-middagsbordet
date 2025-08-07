@@ -1,0 +1,776 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1728 / 814;
+    background: url('IMG_VRM/Bakgrundsbild.png') no-repeat center center;
+    background-size: cover;
+}
+
+.header-title {
+    position: absolute;
+    top: 12.5rem;
+    left: 6rem;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    max-width: 50%;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    height: auto;
+    background: #161616;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5.5rem;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.nav-icon {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+/*Hemsida*/
+h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.display {
+    display: flex;
+    text-align: center;
+    gap: 6rem;
+    margin: 4rem;
+}
+
+#PokebowlSection {
+    background-color: #161616;
+    color: white;
+    display: flex;
+    gap: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+#PokebowlIMG {
+    width: 46rem;
+}
+
+#PokebowlText {
+    margin-right: 5rem;
+    margin-top: 15rem;
+}
+
+#Boka {
+    display: flex;
+    background-color: #161616;
+    color: white;
+}
+
+#BokaIMG {
+    width: auto;
+    height: 28.8rem;
+    margin-right: 2rem;
+}
+
+table {
+    width: 90%;
+    max-width: 70rem;
+    margin: 4rem auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+th, td {
+    padding: 2rem;
+    text-align: left;
+}
+
+th {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #161616;
+}
+
+#BokaRubrik {
+    background-color: #161616;
+    color: white;
+    padding: 3rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#Bokningsformulär {
+    padding: 4rem 2rem;
+    max-width: 45rem;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #161616;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0;
+    margin-left: 6rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    width: 10rem;
+    text-align: right;
+}
+
+input[type="text"] {
+    flex: 1;
+    height: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+}
+
+select {
+    flex: 1;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    align-self: flex-start;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    background-color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #bcbcbc;
+}
+
+#Sökbild {
+    background-color: #161616;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: white;
+    font-weight: 700;
+}
+
+#Sökbild:hover {
+    background-color: #bcbcbc;
+}
+
+#FormulärRubrik {
+    margin-left: 8rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+}
+
+#image-container {
+    width: 100%;
+    max-width: 36rem;
+    height: auto;
+    margin-top: 2rem;
+}
+
+#searchInput {
+    width: 26rem;
+    background-color: #f6f6f6;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+#displayBokning {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 6rem;
+    margin: 2rem;
+}
+
+#icons-footer {
+    display: flex;
+    gap: 2rem;
+}
+
+#footer {
+    display: flex;
+    background-color:#161616;
+    color: white;
+    gap: 8rem;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+#rubrik-footer {
+    background-color: #161616;
+    color: white;
+    margin: 0;
+    padding: 3rem 3rem 0 3rem;
+    font-size: 1.8rem;
+}
+
+span {
+    font-size: 2rem;
+}
+
+/*Recept på hemsidan*/
+.RubrikRecept {
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+}
+
+.displayMatkultur {
+    display: flex;
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    margin: 4rem 0 6rem 0;
+}
+
+.IMGMatkultur {
+    height: auto;
+    width: 45rem;
+}
+
+.TextMatkultur {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 7rem;
+}
+
+.IMGMaträtt {
+    width: 30rem;
+    height: auto;
+}
+
+.display-rubrik-recept {
+    display: flex;
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+}
+
+.rubrik-maträtt {
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 6rem;
+}
+
+.rubrik-portioner {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 5rem;
+    margin-top: 0;
+}
+
+.display-recept {
+    display: flex;
+    gap: 5rem;
+    margin: 0 5rem 0 10rem;
+}
+
+.ingrediens-lista {
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.gör-såhär {
+    width: 45rem;
+}
+
+.steg-recept {
+    margin-bottom: 0;
+}
+
+.beskrivning-recept {
+    margin-top: 0;
+}
+
+ul {
+    line-height: 1.8rem;
+}
+
+/*Näringsinformation*/
+.display-näringsinformation {
+    display: flex;
+    gap: 10rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+}
+
+#räkna-ut-knapp {
+    background-color: #161616;
+    color: white;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+
+#IMG-naringsinformation {
+    width: 100%;
+    margin: 2rem 0 0 0;
+}
+
+#ingredientsInput {
+    border-color: #161616;
+    border-width: 0.2rem;
+    padding: 1rem;
+    background-color: #f6f6f6;
+}
+
+/*Responsivitet för mobiltelefoner*/
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+        background-color: white;
+    }
+
+    .header-title {
+        top: 2rem;
+        left: 3rem;
+        font-size: 2rem;
+    }
+
+    .nav-bar {
+        display: flex;
+        gap: 1rem;
+        padding: 2rem;
+        padding: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav-icon {
+        font-size: 1rem;
+    }
+
+    .display,
+    #Boka,
+    .displayMatkultur,
+    .display-rubrik-recept,
+    .display-näringsinformation,
+    #footer {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    #PokebowlIMG {
+        width: 90%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    #PokebowlSection {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    #BokaIMG {
+        width: 90%;
+        height: auto;
+    }
+
+    #PokebowlText {
+        margin: 0 1rem;
+        text-align: center;
+    }
+
+    #Bokningsformulär,
+    form {
+        margin: 0;
+        padding: 5rem;
+        width: 12rem;
+    }
+
+    #displayBokning {
+        margin: 1rem;
+        justify-content: center;
+    }
+
+    label {
+        width: auto;
+        text-align: left;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="submit"] {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    input[type="text"] {
+        width: 11rem;
+    }
+
+    select {
+        width: 13rem;
+    }
+
+    #FormulärRubrik,
+    .rubrik-maträtt,
+    .rubrik-portioner {
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+
+    #searchInput {
+        width: 10rem;
+        margin: 1rem auto;
+    }
+
+    table {
+        font-size: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    th, td {
+        padding: 1rem;
+        font-size: 0.5rem;
+    }
+
+    #BokaIMG {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    .rubrik-maträtt,
+    .rubrik-portioner {
+        text-align: center;
+        margin: 0 1.5rem 3rem 1.5rem;
+    }
+
+    .RubrikRecept {
+        text-align: center;
+        margin: 3rem 0;
+    }
+
+    .IMGMatkultur {
+        width: 90%;
+        height: auto;
+        margin: 0 2rem 4rem 2rem;
+    }
+
+    .TextMatkultur {
+        margin: 3rem 3rem 1rem 3rem;
+    }
+
+    .gör-såhär {
+        text-align: center;
+        margin: 0;
+        width: 80%;
+    }
+
+    .ingrediens-lista {
+        text-align: center;
+        margin: 0;
+    }
+
+    .ingrediens-lista ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .display-recept {
+        margin: 0;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .IMGMaträtt {
+        width: 90%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    #footer {
+        gap: 2rem;
+        padding: 2rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #rubrik-footer {
+        text-align: center;
+        padding: 2rem 1rem 1rem 1rem;
+        margin-top: 2rem;
+    }
+
+    #icons-footer {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .display-näringsinformation {
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+/*Responsivitet för surfplattor*/
+@media screen and (min-width: 768px) and (max-width: 1330px) {
+    .header-title {
+        font-size: 4rem;
+        max-width: 50%;
+        margin-top: 0;
+    }
+
+    .nav-bar {
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    #PokebowlSection,
+    #Boka,
+    .displayMatkultur,
+    #displayBokning {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .display {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 6rem;
+    }
+
+    .display-recept {
+        margin: 3rem 6rem 3rem 6rem;
+        gap: 4rem;
+    }
+
+    .IMGMaträtt {
+        width: 100%;
+        max-width: 36rem;
+        height: auto;
+    }
+
+    .IMGMatkultur {
+        width: 100%;
+        max-width: 36rem;
+        height: auto;
+        margin-bottom: 6rem;
+    }
+
+    #PokebowlIMG {
+        width: 100%;
+        max-width: 36rem;
+        height: auto;
+        margin-top: 6rem;
+    }
+
+    #PokebowlText {
+        margin: 0 6rem 3rem 6rem;
+    }
+
+    .TextMatkultur {
+        margin: 3rem 6rem 3rem 6rem;
+    }
+
+    form {
+        margin-left: 0;
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    #FormulärRubrik {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #BokaIMG {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #image-container {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+
+    .rubrik-maträtt {
+        text-align: center;
+        margin: 6rem 3rem 0 3rem;
+    }
+
+    .rubrik-portioner {
+        text-align: center;
+        margin: 0.5rem 3rem 4rem 3rem;
+    }
+
+    .RubrikRecept {
+        margin-left: 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #searchInput {
+        width: 90%;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    input[type="submit"] {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    #rubrik-footer {
+        font-size: 1.5rem;
+    }
+
+    #footer {
+        gap: 5rem;
+    }
+
+    #icons-footer {
+        justify-content: center;
+    }
+
+    .display-näringsinformation {
+        gap: 4rem;
+    }
+
+    body {
+        background-color: white;
+    }
+}
+
+@media screen and (min-width: 1442px) {
+   .display {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        gap: 10rem;
+    }
+
+    #PokebowlIMG {
+        width: 35rem;
+        height: auto;
+        margin: 5rem 5rem 5rem 12rem;
+    }
+
+    #PokebowlText {
+        margin-right: 10rem;
+    }
+
+    #Boka {
+        padding-left: 5rem;
+    }
+
+    #BokaIMG {
+        width: 40%;
+        height: 40%;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    #displayBokning {
+        gap: 5%;
+    }
+
+    .RubrikRecept {
+        font-size: 2.5rem;
+    }
+
+    .display-näringsinformation h2 {
+        font-size: 2rem;
+    }
+}

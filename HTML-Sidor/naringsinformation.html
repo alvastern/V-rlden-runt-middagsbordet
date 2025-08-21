@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <title>Världen runt middagsbordet</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <header>
+        <div class="hero-image"></div>
+        <h1 class="header-title">Världen runt middagsbordet</h1>
+      </header>
+    
+        <nav class="nav-bar">
+            <a class="nav-icon" href="../index.html"><i class="fas fa-house"></i></a>
+            <a class="nav-link" href="afrika.html">Afrika</a>
+            <a class="nav-link" href="europa.html">Europa</a>
+            <a class="nav-link" href="asien.html">Asien</a>
+            <a class="nav-link" href="oceanien.html">Oceanien</a>
+            <a class="nav-link" href="nordamerika.html">Nordamerika</a>
+            <a class="nav-link" href="sydamerika.html">Sydamerika</a>
+            <a class="nav-icon" href="naringsinformation.html"><i class="fas fa-calculator"></i></a>
+        </nav>
+
+        <main>
+            <section class="display-näringsinformation">
+                <article>
+                    <h2>Räkna ut näringsvärde</h2>
+                    <textarea id="ingredientsInput" rows="6" cols="40" placeholder="Skriv en ingrediens och dess vikt per rad, exempelvis banan 100 gram..."></textarea><br><br>
+                    <button onclick="getNutrition()" id="räkna-ut-knapp">Räkna ut</button>
+                </article>
+
+                <div id="result"></div>
+
+                <script src="JavaScript/naringsinformation.js"></script> 
+            </section>
+
+            <img src="../Images/Naringsinformation.png" alt="Flera olika sorters mat" id="IMG-naringsinformation">
+        </main> 
+
+        <footer>
+            <h2 id="rubrik-footer">Världen runt middagsbordet</h2>
+            <section id="footer">
+                <article>
+                    <h3>Om företaget</h3>
+                    <p>Bildgalleri</p>
+                    <p>Våra resemål</p>
+                </article>
+
+                <article>
+                    <h3>Kontakt</h3>
+                    <p><b>Email:</b> världen@gmail.com</p>
+                    <p><b>Telefon:</b> 070 XXX XX XX</p>
+                </article>
+
+                <article>
+                    <h3>Följ oss</h3>
+                    <article id="icons-footer">
+                        <span class="fab fa-instagram"></span>
+                        <span class="fab fa-facebook"></span>
+                        <span class="fab fa-youtube"></span>
+                    </article>
+                </article>
+            </section>
+        </footer>
+    </body>
+</html>
